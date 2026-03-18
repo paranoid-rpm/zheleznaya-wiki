@@ -1,162 +1,299 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" data-theme="dark">
 <head>
   <meta charset="UTF-8" />
-  <title>Железная Вики — влияние спорта на жизнь</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Железная Вики — Влияние спорта на жизнь</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
-  <canvas id="bg-canvas"></canvas>
-  <div class="page-shell">
-    <header class="site-header">
-      <div class="nav-inner">
-        <a href="index.html" class="logo" aria-label="Железная Вики">
-          <svg class="logo-svg" viewBox="0 0 36 36" fill="none" aria-hidden="true" width="36" height="36">
-            <rect width="36" height="36" rx="10" fill="url(#lg)"/>
-            <defs><linearGradient id="lg" x1="0" y1="0" x2="36" y2="36"><stop stop-color="#ff6f61"/><stop offset="1" stop-color="#b71c1c"/></linearGradient></defs>
-            <text x="5" y="26" font-family="Inter,sans-serif" font-weight="800" font-size="20" fill="#fff" letter-spacing="-1">ЖВ</text>
+  <canvas id="bgCanvas"></canvas>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Железная Вики логотип">
+          <rect width="40" height="40" rx="8" fill="#c62828"/>
+          <rect x="5" y="18" width="6" height="4" rx="2" fill="white"/>
+          <rect x="29" y="18" width="6" height="4" rx="2" fill="white"/>
+          <rect x="11" y="14" width="4" height="12" rx="2" fill="white"/>
+          <rect x="25" y="14" width="4" height="12" rx="2" fill="white"/>
+          <rect x="15" y="17" width="10" height="6" rx="1" fill="white"/>
+        </svg>
+        <div class="logo-text">
+          <span class="logo-main">Железная Вики</span>
+          <span class="logo-sub">Спорт. Наука. Жизнь.</span>
+        </div>
+      </a>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="theory.html">Теория</a></li>
+          <li><a href="workouts.html">Тренировки</a></li>
+          <li><a href="exercises.html">Упражнения</a></li>
+          <li><a href="nutrition.html">Питание</a></li>
+          <li><a href="psychology.html">Психология</a></li>
+          <li><a href="myths.html">Мифы</a></li>
+        </ul>
+      </nav>
+      <button class="burger" id="burger" aria-label="Меню">&#9776;</button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">Вики для настоящих</div>
+      <h1 class="hero-title">Железная<br /><span class="accent">Вики</span></h1>
+      <p class="hero-sub">Всё что нужно знать о спорте, тренировках,<br />питании и психологии победителя. Без воды.</p>
+      <div class="hero-actions">
+        <a href="theory.html" class="btn btn-primary">Начать изучение</a>
+        <a href="workouts.html" class="btn btn-ghost">Тренировки</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">5</span>
+          <span class="stat-label">Разделов</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">50+</span>
+          <span class="stat-label">Упражнений</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">100%</span>
+          <span class="stat-label">Без допинга</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-ring">
+        <div class="hero-ring-inner">
+          <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg" class="hero-barbell">
+            <rect x="20" y="90" width="20" height="20" rx="4" fill="#c62828" opacity="0.9"/>
+            <rect x="20" y="78" width="20" height="14" rx="3" fill="#c62828" opacity="0.7"/>
+            <rect x="20" y="108" width="20" height="14" rx="3" fill="#c62828" opacity="0.7"/>
+            <rect x="40" y="96" width="120" height="8" rx="4" fill="#e0e0e0"/>
+            <rect x="160" y="90" width="20" height="20" rx="4" fill="#c62828" opacity="0.9"/>
+            <rect x="160" y="78" width="20" height="14" rx="3" fill="#c62828" opacity="0.7"/>
+            <rect x="160" y="108" width="20" height="14" rx="3" fill="#c62828" opacity="0.7"/>
           </svg>
-          <div class="logo-text">
-            <span class="logo-text-main">Железная Вики</span>
-            <span class="logo-text-sub">влияние спорта на жизнь</span>
-          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JOKE TICKER -->
+  <div class="ticker-wrap">
+    <div class="ticker">
+      <span>💪 «Не пропускай день ног» &nbsp;·&nbsp; </span>
+      <span>🏋️ Протеин — это не стероиды, успокойся &nbsp;·&nbsp; </span>
+      <span>😤 Одно повторение со всем весом зала &nbsp;·&nbsp; </span>
+      <span>🥩 Братан, ты ел сегодня? &nbsp;·&nbsp; </span>
+      <span>📱 Лайки не качают мышцы &nbsp;·&nbsp; </span>
+      <span>🌙 Сон — лучший анаболик &nbsp;·&nbsp; </span>
+      <span>🔥 Боль — это слабость, покидающая тело (нет, это травма — иди к врачу) &nbsp;·&nbsp; </span>
+      <span>💪 «Не пропускай день ног» &nbsp;·&nbsp; </span>
+      <span>🏋️ Протеин — это не стероиды, успокойся &nbsp;·&nbsp; </span>
+    </div>
+  </div>
+
+  <!-- SECTIONS GRID -->
+  <section class="sections-overview">
+    <div class="container">
+      <h2 class="section-title">Разделы Вики</h2>
+      <p class="section-sub">Полная база знаний — от теории до практики</p>
+      <div class="cards-grid">
+
+        <a href="theory.html" class="wiki-card">
+          <div class="card-icon">📚</div>
+          <h3>Теория</h3>
+          <p>Что такое спорт, физическая культура, ЗОЖ. История развития. Влияние на здоровье, психику и общество.</p>
+          <span class="card-arrow">→</span>
         </a>
-        <nav class="main-nav" aria-label="Основная навигация">
+
+        <a href="workouts.html" class="wiki-card">
+          <div class="card-icon">🏋️</div>
+          <h3>Тренировки</h3>
+          <p>Программы для новичков, продвинутых. Дом, зал, улица. Видео-тренировки доступные в РФ.</p>
+          <span class="card-arrow">→</span>
+        </a>
+
+        <a href="exercises.html" class="wiki-card">
+          <div class="card-icon">💪</div>
+          <h3>Упражнения</h3>
+          <p>Справочник по группам мышц. Техника, ошибки, уровень сложности, видео-демонстрации.</p>
+          <span class="card-arrow">→</span>
+        </a>
+
+        <a href="nutrition.html" class="wiki-card">
+          <div class="card-icon">🥩</div>
+          <h3>Спортпит</h3>
+          <p>Протеин, креатин, аминокислоты, витамины. Что реально работает, что нет и зачем это всё.</p>
+          <span class="card-arrow">→</span>
+        </a>
+
+        <a href="psychology.html" class="wiki-card">
+          <div class="card-icon">🧠</div>
+          <h3>Психология</h3>
+          <p>Мотивация, дисциплина, как не бросить через 2 недели. Спорт как инструмент развития характера.</p>
+          <span class="card-arrow">→</span>
+        </a>
+
+        <a href="myths.html" class="wiki-card">
+          <div class="card-icon">🚫</div>
+          <h3>Мифы и FAQ</h3>
+          <p>Разбиваем мифы о спорте. «Жир не уходит локально», «девушки не качаются от гантелей» и другие.</p>
+          <span class="card-arrow">→</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED VIDEO -->
+  <section class="featured-video">
+    <div class="container">
+      <h2 class="section-title">Видео недели</h2>
+      <p class="section-sub">Тренировки и обучалки доступные в России</p>
+      <div class="video-grid">
+        <div class="video-card main-video">
+          <div class="video-wrap">
+            <iframe src="https://vkvideo.ru/video_ext.php?oid=-22822305&id=456241864&hd=2" frameborder="0" allowfullscreen loading="lazy" title="Тренировка всего тела"></iframe>
+          </div>
+          <div class="video-info">
+            <span class="video-tag">Для новичков</span>
+            <h3>Тренировка всего тела дома</h3>
+            <p>Эффективная тренировка без железа для тех кто только начинает. 20 минут — и уже лучше чем вчера.</p>
+          </div>
+        </div>
+        <div class="video-side">
+          <div class="video-card small-video">
+            <div class="video-wrap">
+              <iframe src="https://rutube.ru/play/embed/b3f8a9c7d2e1f4a5b6c8d9e0f1a2b3c4/" frameborder="0" allowfullscreen loading="lazy" title="Утренняя зарядка"></iframe>
+            </div>
+            <div class="video-info">
+              <span class="video-tag">Утро</span>
+              <h3>5-минутная зарядка</h3>
+            </div>
+          </div>
+          <div class="video-card small-video">
+            <div class="video-wrap">
+              <iframe src="https://vkvideo.ru/video_ext.php?oid=-34530941&id=456242000&hd=2" frameborder="0" allowfullscreen loading="lazy" title="Турник воркаут"></iframe>
+            </div>
+            <div class="video-info">
+              <span class="video-tag">Улица</span>
+              <h3>Воркаут на турнике</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUICK FACTS -->
+  <section class="quick-facts">
+    <div class="container">
+      <h2 class="section-title">Факты о спорте</h2>
+      <div class="facts-grid">
+        <div class="fact-card">
+          <div class="fact-num">30</div>
+          <div class="fact-unit">мин/день</div>
+          <p>Минимальная рекомендация ВОЗ по физической активности для взрослых</p>
+        </div>
+        <div class="fact-card">
+          <div class="fact-num">↑35%</div>
+          <div class="fact-unit">иммунитет</div>
+          <p>Умеренные регулярные нагрузки повышают устойчивость к сезонным болезням</p>
+        </div>
+        <div class="fact-card">
+          <div class="fact-num">-40%</div>
+          <div class="fact-unit">стресс</div>
+          <p>Физическая активность снижает уровень кортизола и тревожности</p>
+        </div>
+        <div class="fact-card">
+          <div class="fact-num">+7</div>
+          <div class="fact-unit">лет жизни</div>
+          <p>Активные люди в среднем живут дольше малоподвижных по данным исследований</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JOKE SECTION -->
+  <section class="joke-section">
+    <div class="container">
+      <h2 class="section-title">Мудрость качков</h2>
+      <div class="jokes-grid">
+        <div class="joke-card">
+          <div class="joke-emoji">💪</div>
+          <p>«Пропустил тренировку? Значит следующие две — обязательные.»</p>
+          <span class="joke-author">— Железная логика</span>
+        </div>
+        <div class="joke-card">
+          <div class="joke-emoji">🥩</div>
+          <p>«Братан, сколько белка в день? — Больше, чем ты думаешь, и меньше, чем ты ешь.»</p>
+          <span class="joke-author">— Братан из зала</span>
+        </div>
+        <div class="joke-card">
+          <div class="joke-emoji">😴</div>
+          <p>«Мышцы растут не на тренировке, а во сне. Поэтому я сплю по 10 часов — это режим.»</p>
+          <span class="joke-author">— Профессиональный подход</span>
+        </div>
+        <div class="joke-card">
+          <div class="joke-emoji">📱</div>
+          <p>«Тренировка без сторис — была ли она вообще? Наука пока молчит.»</p>
+          <span class="joke-author">— Современный атлет</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">
+            <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="40" height="40" rx="8" fill="#c62828"/>
+              <rect x="5" y="18" width="6" height="4" rx="2" fill="white"/>
+              <rect x="29" y="18" width="6" height="4" rx="2" fill="white"/>
+              <rect x="11" y="14" width="4" height="12" rx="2" fill="white"/>
+              <rect x="25" y="14" width="4" height="12" rx="2" fill="white"/>
+              <rect x="15" y="17" width="10" height="6" rx="1" fill="white"/>
+            </svg>
+            <span class="logo-main">Железная Вики</span>
+          </div>
+          <p>Образовательный проект о влиянии спорта на жизнь человека. МПТ им. Плеханова, 2026.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Разделы</h4>
           <ul>
             <li><a href="theory.html">Теория</a></li>
             <li><a href="workouts.html">Тренировки</a></li>
             <li><a href="exercises.html">Упражнения</a></li>
             <li><a href="nutrition.html">Спортпит</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Ещё</h4>
+          <ul>
             <li><a href="psychology.html">Психология</a></li>
-            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="myths.html">Мифы</a></li>
             <li><a href="about.html">О проекте</a></li>
           </ul>
-        </nav>
+        </div>
       </div>
-    </header>
-
-    <main class="site-main">
-      <section class="hero">
-        <div class="hero-grid">
-          <div class="hero-copy">
-            <p class="hero-kicker">Вики для качков и не только</p>
-            <h1>Как спорт меняет тело, мозг и жизнь</h1>
-            <p class="hero-lead">Строгая, но ламповая энциклопедия о влиянии физической активности на здоровье, психику, учёбу и работу. Без воды, но с лёгким юмором и примерами из жизни.</p>
-            <div class="hero-actions">
-              <a class="btn btn-primary" href="theory.html">Начать с теории</a>
-              <a class="btn btn-ghost" href="workouts.html">Сразу к тренировкам</a>
-            </div>
-            <ul class="hero-facts">
-              <li><span class="tag">Здоровье</span> сердце, сосуды, иммунитет</li>
-              <li><span class="tag">Психика</span> стресс, концентрация, сон</li>
-              <li><span class="tag">Социум</span> уверенность, дисциплина, общение</li>
-            </ul>
-          </div>
-          <aside class="hero-panel" aria-label="Быстрый обзор разделов">
-            <h2>Что внутри</h2>
-            <ul class="hero-list">
-              <li><h3>Теория влияния спорта</h3><p>Физическое здоровье, психика, социализация — с источниками и без занудства.</p></li>
-              <li><h3>Практика и программы</h3><p>Тренировки дома, в зале и на улице. Видео с Rutube и VK Видео, доступные в РФ.</p></li>
-              <li><h3>Спортпит без мифов</h3><p>Протеин, креатин, витамины — когда помогают, а когда не спасут без режима.</p></li>
-              <li><h3>Психология и мотивация</h3><p>Как не слиться через две недели и превратить спорт в нормальную часть жизни.</p></li>
-            </ul>
-          </aside>
-        </div>
-      </section>
-
-      <section class="section" aria-labelledby="sec-impact">
-        <div class="section-header">
-          <p class="section-kicker">Зачем вообще вставать с кресла</p>
-          <h2 id="sec-impact">Влияние спорта на основные сферы жизни</h2>
-          <p class="section-lead">Здесь кратко — для затравки. В разделе «Теория» всё будет разложено по полочкам для рефератов, докладов и просто любопытства.</p>
-        </div>
-        <div class="cards-grid columns-3">
-          <article class="card">
-            <h3>Физическое здоровье</h3>
-            <p>Регулярная нагрузка снижает риск болезней сердца, укрепляет мышцы и суставы, помогает держать нормальный вес и легче переносить стресс.</p>
-          </article>
-          <article class="card">
-            <h3>Психика и мозг</h3>
-            <p>Движение влияет на выработку гормонов, связанных с настроением, улучшает сон, концентрацию и способность учиться и запоминать.</p>
-          </article>
-          <article class="card">
-            <h3>Социальная жизнь</h3>
-            <p>Спорт учит дисциплине, работе в команде, даёт чувство контроля над собой и добавляет уверенности в общении с людьми.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section" aria-labelledby="sec-video">
-        <div class="section-header">
-          <p class="section-kicker">Если читать лень</p>
-          <h2 id="sec-video">Примеры тренировок, доступных без VPN</h2>
-          <p class="section-lead">Подборки тренировок с Rutube и VK Видео: можно сразу повторить дома или в зале. Это только примеры — в разделе «Тренировки» будет своя систематизация.</p>
-        </div>
-        <div class="video-grid">
-          <article class="video-card">
-            <h3>7‑минутная домашняя тренировка</h3>
-            <div class="video-frame">
-              <iframe src="https://rutube.ru/play/embed/f80def20785e1056ff71be51c012d3ee/" title="7 Minute Workout" frameborder="0" allowfullscreen loading="lazy"></iframe>
-            </div>
-            <p class="video-meta">Короткий комплекс на всё тело, подойдёт новичкам и тем, кто «вообще не успевает».</p>
-          </article>
-          <article class="video-card">
-            <h3>Тренировки дома без железа</h3>
-            <div class="video-frame">
-              <iframe src="https://vkvideo.ru/playlist/-47428905_1" title="Тренировки дома — VK Видео" frameborder="0" allowfullscreen loading="lazy"></iframe>
-            </div>
-            <p class="video-meta">Подборка домашних тренировок: можно начать с коврика и стула, без абонемента в зал.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section" aria-labelledby="sec-nutro">
-        <div class="section-header">
-          <p class="section-kicker">Порошки — это не магия</p>
-          <h2 id="sec-nutro">Кратко о спортивном питании</h2>
-          <p class="section-lead">Внутри — спокойный разбор, что такое протеин, креатин и витамины, зачем они нужны и почему без сна и нормальной еды они мало что решат.</p>
-        </div>
-        <div class="cards-grid columns-3">
-          <article class="card">
-            <h3>Протеин</h3>
-            <p>Удобный способ добрать белок, а не волшебный порошок для «моментального роста» мышц.</p>
-          </article>
-          <article class="card">
-            <h3>Креатин</h3>
-            <p>Поддерживает силовые показатели и восстановление, при условии регулярных тренировок.</p>
-          </article>
-          <article class="card">
-            <h3>Витамины и минералы</h3>
-            <p>Компенсируют дефициты, но не работают как «таблетка от всего».</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section" aria-labelledby="sec-cta">
-        <div class="cta-card">
-          <div>
-            <h2 id="sec-cta">Готов собрать свой сет из теории и практики?</h2>
-            <p>Начни с раздела, который сейчас болит больше всего: здоровье, мотивация или прогрев перед первой тренировкой. А потом уже будем «качать проект» по полной.</p>
-          </div>
-          <div class="cta-actions">
-            <a class="btn btn-primary" href="theory.html">В теорию</a>
-            <a class="btn btn-ghost" href="workouts.html">К программам</a>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <div class="footer-inner">
-        <p>© 2026 · «Железная Вики» — учебный и просветительский проект про влияние спорта на жизнь.</p>
-        <p class="footer-note">Сайт в разработке: разделы постепенно наполняются контентом и примерами.</p>
+      <div class="footer-bottom">
+        <p>© 2026 Железная Вики · Бетмирзаев Т.А. · МПТ РЭУ им. Плеханова</p>
       </div>
-    </footer>
-  </div>
-  <script src="assets/main.js"></script>
+    </div>
+  </footer>
+
+  <script src="assets/js/canvas.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
 </html>
