@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Железная Вики — влияние спорта на жизнь</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <canvas id="bg-canvas"></canvas>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="nav-inner">
+        <a href="index.html" class="logo" aria-label="Железная Вики">
+          <svg class="logo-svg" viewBox="0 0 36 36" fill="none" aria-hidden="true" width="36" height="36">
+            <rect width="36" height="36" rx="10" fill="url(#lg)"/>
+            <defs><linearGradient id="lg" x1="0" y1="0" x2="36" y2="36"><stop stop-color="#ff6f61"/><stop offset="1" stop-color="#b71c1c"/></linearGradient></defs>
+            <text x="5" y="26" font-family="Inter,sans-serif" font-weight="800" font-size="20" fill="#fff" letter-spacing="-1">ЖВ</text>
+          </svg>
+          <div class="logo-text">
+            <span class="logo-text-main">Железная Вики</span>
+            <span class="logo-text-sub">влияние спорта на жизнь</span>
+          </div>
+        </a>
+        <nav class="main-nav" aria-label="Основная навигация">
+          <ul>
+            <li><a href="theory.html">Теория</a></li>
+            <li><a href="workouts.html">Тренировки</a></li>
+            <li><a href="exercises.html">Упражнения</a></li>
+            <li><a href="nutrition.html">Спортпит</a></li>
+            <li><a href="psychology.html">Психология</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="about.html">О проекте</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="site-main">
+      <section class="hero">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="hero-kicker">Вики для качков и не только</p>
+            <h1>Как спорт меняет тело, мозг и жизнь</h1>
+            <p class="hero-lead">Строгая, но ламповая энциклопедия о влиянии физической активности на здоровье, психику, учёбу и работу. Без воды, но с лёгким юмором и примерами из жизни.</p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="theory.html">Начать с теории</a>
+              <a class="btn btn-ghost" href="workouts.html">Сразу к тренировкам</a>
+            </div>
+            <ul class="hero-facts">
+              <li><span class="tag">Здоровье</span> сердце, сосуды, иммунитет</li>
+              <li><span class="tag">Психика</span> стресс, концентрация, сон</li>
+              <li><span class="tag">Социум</span> уверенность, дисциплина, общение</li>
+            </ul>
+          </div>
+          <aside class="hero-panel" aria-label="Быстрый обзор разделов">
+            <h2>Что внутри</h2>
+            <ul class="hero-list">
+              <li><h3>Теория влияния спорта</h3><p>Физическое здоровье, психика, социализация — с источниками и без занудства.</p></li>
+              <li><h3>Практика и программы</h3><p>Тренировки дома, в зале и на улице. Видео с Rutube и VK Видео, доступные в РФ.</p></li>
+              <li><h3>Спортпит без мифов</h3><p>Протеин, креатин, витамины — когда помогают, а когда не спасут без режима.</p></li>
+              <li><h3>Психология и мотивация</h3><p>Как не слиться через две недели и превратить спорт в нормальную часть жизни.</p></li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="sec-impact">
+        <div class="section-header">
+          <p class="section-kicker">Зачем вообще вставать с кресла</p>
+          <h2 id="sec-impact">Влияние спорта на основные сферы жизни</h2>
+          <p class="section-lead">Здесь кратко — для затравки. В разделе «Теория» всё будет разложено по полочкам для рефератов, докладов и просто любопытства.</p>
+        </div>
+        <div class="cards-grid columns-3">
+          <article class="card">
+            <h3>Физическое здоровье</h3>
+            <p>Регулярная нагрузка снижает риск болезней сердца, укрепляет мышцы и суставы, помогает держать нормальный вес и легче переносить стресс.</p>
+          </article>
+          <article class="card">
+            <h3>Психика и мозг</h3>
+            <p>Движение влияет на выработку гормонов, связанных с настроением, улучшает сон, концентрацию и способность учиться и запоминать.</p>
+          </article>
+          <article class="card">
+            <h3>Социальная жизнь</h3>
+            <p>Спорт учит дисциплине, работе в команде, даёт чувство контроля над собой и добавляет уверенности в общении с людьми.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="sec-video">
+        <div class="section-header">
+          <p class="section-kicker">Если читать лень</p>
+          <h2 id="sec-video">Примеры тренировок, доступных без VPN</h2>
+          <p class="section-lead">Подборки тренировок с Rutube и VK Видео: можно сразу повторить дома или в зале. Это только примеры — в разделе «Тренировки» будет своя систематизация.</p>
+        </div>
+        <div class="video-grid">
+          <article class="video-card">
+            <h3>7‑минутная домашняя тренировка</h3>
+            <div class="video-frame">
+              <iframe src="https://rutube.ru/play/embed/f80def20785e1056ff71be51c012d3ee/" title="7 Minute Workout" frameborder="0" allowfullscreen loading="lazy"></iframe>
+            </div>
+            <p class="video-meta">Короткий комплекс на всё тело, подойдёт новичкам и тем, кто «вообще не успевает».</p>
+          </article>
+          <article class="video-card">
+            <h3>Тренировки дома без железа</h3>
+            <div class="video-frame">
+              <iframe src="https://vkvideo.ru/playlist/-47428905_1" title="Тренировки дома — VK Видео" frameborder="0" allowfullscreen loading="lazy"></iframe>
+            </div>
+            <p class="video-meta">Подборка домашних тренировок: можно начать с коврика и стула, без абонемента в зал.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="sec-nutro">
+        <div class="section-header">
+          <p class="section-kicker">Порошки — это не магия</p>
+          <h2 id="sec-nutro">Кратко о спортивном питании</h2>
+          <p class="section-lead">Внутри — спокойный разбор, что такое протеин, креатин и витамины, зачем они нужны и почему без сна и нормальной еды они мало что решат.</p>
+        </div>
+        <div class="cards-grid columns-3">
+          <article class="card">
+            <h3>Протеин</h3>
+            <p>Удобный способ добрать белок, а не волшебный порошок для «моментального роста» мышц.</p>
+          </article>
+          <article class="card">
+            <h3>Креатин</h3>
+            <p>Поддерживает силовые показатели и восстановление, при условии регулярных тренировок.</p>
+          </article>
+          <article class="card">
+            <h3>Витамины и минералы</h3>
+            <p>Компенсируют дефициты, но не работают как «таблетка от всего».</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="sec-cta">
+        <div class="cta-card">
+          <div>
+            <h2 id="sec-cta">Готов собрать свой сет из теории и практики?</h2>
+            <p>Начни с раздела, который сейчас болит больше всего: здоровье, мотивация или прогрев перед первой тренировкой. А потом уже будем «качать проект» по полной.</p>
+          </div>
+          <div class="cta-actions">
+            <a class="btn btn-primary" href="theory.html">В теорию</a>
+            <a class="btn btn-ghost" href="workouts.html">К программам</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p>© 2026 · «Железная Вики» — учебный и просветительский проект про влияние спорта на жизнь.</p>
+        <p class="footer-note">Сайт в разработке: разделы постепенно наполняются контентом и примерами.</p>
+      </div>
+    </footer>
+  </div>
+  <script src="assets/main.js"></script>
+</body>
+</html>

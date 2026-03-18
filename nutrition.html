@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Спортпит — Железная Вики</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <canvas id="bg-canvas"></canvas>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="nav-inner">
+        <a href="index.html" class="logo" aria-label="Железная Вики">
+          <svg class="logo-svg" viewBox="0 0 36 36" fill="none" aria-hidden="true" width="36" height="36">
+            <rect width="36" height="36" rx="10" fill="url(#lg)"/>
+            <defs><linearGradient id="lg" x1="0" y1="0" x2="36" y2="36"><stop stop-color="#ff6f61"/><stop offset="1" stop-color="#b71c1c"/></linearGradient></defs>
+            <text x="5" y="26" font-family="Inter,sans-serif" font-weight="800" font-size="20" fill="#fff" letter-spacing="-1">ЖВ</text>
+          </svg>
+          <div class="logo-text">
+            <span class="logo-text-main">Железная Вики</span>
+            <span class="logo-text-sub">влияние спорта на жизнь</span>
+          </div>
+        </a>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="theory.html">Теория</a></li>
+            <li><a href="workouts.html">Тренировки</a></li>
+            <li><a href="exercises.html">Упражнения</a></li>
+            <li><a href="nutrition.html">Спортпит</a></li>
+            <li><a href="psychology.html">Психология</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="about.html">О проекте</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="site-main">
+      <section class="section">
+        <div class="section-header">
+          <p class="section-kicker">Раздел без фанатизма</p>
+          <h1>Спортивное питание без мифов</h1>
+          <p class="section-lead">Краткие конспекты по видам спортивного питания, их целям и ограничениям, чтобы отличать работающие вещи от маркетинга.</p>
+        </div>
+        <div class="cards-grid columns-3">
+          <article class="card"><h2>Протеин</h2><p>Добавка для добора белка, а не замена обычной еды. Важен общий рацион и баланс.</p></article>
+          <article class="card"><h2>Креатин</h2><p>Поддерживает силовую выносливость и восстановление, при условии регулярных тренировок.</p></article>
+          <article class="card"><h2>Витамины и минералы</h2><p>Компенсируют дефициты, но не работают как «таблетка от всего».</p></article>
+        </div>
+      </section>
+      <section class="section">
+        <div class="section-header">
+          <p class="section-kicker">Пример структуры</p>
+          <h2>Как можно оформить обзор</h2>
+          <p class="section-lead">Для учебного проекта удобно делать таблицы: название добавки, эффект, когда уместно, противопоказания и ссылки на источники.</p>
+        </div>
+      </section>
+      <section class="section">
+        <div class="section-header">
+          <p class="section-kicker">Важно</p>
+          <h2>Фарма и допинг</h2>
+          <p class="section-lead">Строгий блок: что такое допинг, почему это опасно и незаконно, ссылки на список запрещённых веществ РУСАДА и федеральный закон о спорте.</p>
+        </div>
+        <div class="cards-grid columns-3">
+          <article class="card"><h3>Что такое допинг</h3><p>Вещества и методы из запрещённого списка ВАДА/РУСАДА, применение которых нарушает антидопинговые правила.</p></article>
+          <article class="card"><h3>Почему это опасно</h3><p>Серьёзный вред здоровью, дисквалификация, юридические последствия и разрушение карьеры.</p></article>
+          <article class="card"><h3>Натуральный подход</h3><p>Прогресс через системные тренировки, питание, сон и восстановление — долго, зато без побочек.</p></article>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer"><div class="footer-inner"><p>© 2026 · «Железная Вики» · Раздел о спортивном питании.</p></div></footer>
+  </div>
+  <script src="assets/main.js"></script>
+</body>
+</html>

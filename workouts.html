@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Тренировки — Железная Вики</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <canvas id="bg-canvas"></canvas>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="nav-inner">
+        <a href="index.html" class="logo" aria-label="Железная Вики">
+          <svg class="logo-svg" viewBox="0 0 36 36" fill="none" aria-hidden="true" width="36" height="36">
+            <rect width="36" height="36" rx="10" fill="url(#lg)"/>
+            <defs><linearGradient id="lg" x1="0" y1="0" x2="36" y2="36"><stop stop-color="#ff6f61"/><stop offset="1" stop-color="#b71c1c"/></linearGradient></defs>
+            <text x="5" y="26" font-family="Inter,sans-serif" font-weight="800" font-size="20" fill="#fff" letter-spacing="-1">ЖВ</text>
+          </svg>
+          <div class="logo-text">
+            <span class="logo-text-main">Железная Вики</span>
+            <span class="logo-text-sub">влияние спорта на жизнь</span>
+          </div>
+        </a>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="theory.html">Теория</a></li>
+            <li><a href="workouts.html">Тренировки</a></li>
+            <li><a href="exercises.html">Упражнения</a></li>
+            <li><a href="nutrition.html">Спортпит</a></li>
+            <li><a href="psychology.html">Психология</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="about.html">О проекте</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="site-main">
+      <section class="section">
+        <div class="section-header">
+          <p class="section-kicker">Практическая часть</p>
+          <h1>Примеры тренировочных программ</h1>
+          <p class="section-lead">Готовые схемы тренировок по уровням подготовки и условиям: дома, в зале и на улице. Видео — с Rutube и VK Видео, доступных в РФ.</p>
+        </div>
+        <div class="cards-grid columns-3">
+          <article class="card"><h2>Новичок</h2><p>2–3 тренировки в неделю, базовые движения, акцент на технику и адаптацию организма.</p></article>
+          <article class="card"><h2>Средний уровень</h2><p>3–4 тренировки в неделю, работа с объёмом, прогрессия нагрузок и разнообразие упражнений.</p></article>
+          <article class="card"><h2>Продвинутый</h2><p>4–5 тренировок в неделю, планирование циклов, работа над слабыми местами и восстановлением.</p></article>
+        </div>
+      </section>
+      <section class="section">
+        <div class="section-header">
+          <p class="section-kicker">Дома</p>
+          <h2>Тренировки без зала</h2>
+          <p class="section-lead">Минимум инвентаря, максимум пользы: коврик, стул, пара гантелей — уже можно работать.</p>
+        </div>
+        <div class="video-grid">
+          <article class="video-card">
+            <h3>Комплекс на всё тело</h3>
+            <div class="video-frame"><iframe src="https://rutube.ru/play/embed/f80def20785e1056ff71be51c012d3ee/" title="7 Minute Workout" frameborder="0" allowfullscreen loading="lazy"></iframe></div>
+            <p class="video-meta">Аэробная нагрузка для поддержания формы и здоровья в домашних условиях.</p>
+          </article>
+          <article class="video-card">
+            <h3>VK Видео: тренировки дома</h3>
+            <div class="video-frame"><iframe src="https://vkvideo.ru/playlist/-47428905_1" title="Домашние тренировки — VK Видео" frameborder="0" allowfullscreen loading="lazy"></iframe></div>
+            <p class="video-meta">Подборка домашних тренировок, которые можно разнести по дням недели.</p>
+          </article>
+        </div>
+      </section>
+      <section class="section">
+        <div class="section-header">
+          <p class="section-kicker">Зал</p>
+          <h2>Классический тренажёрный зал</h2>
+          <p class="section-lead">Примеры сплит‑схем: фуллбоди, верх/низ, push/pull/legs. Таблицы можно составлять под свои задачи.</p>
+        </div>
+        <div class="video-grid">
+          <article class="video-card">
+            <h3>World Class: видеоуроки</h3>
+            <div class="video-frame"><iframe src="https://rutube.ru/channel/25500782/" title="World Class на Rutube" frameborder="0" allowfullscreen loading="lazy"></iframe></div>
+            <p class="video-meta">Профессиональные тренировки от сети World Class, доступны на Rutube.</p>
+          </article>
+          <article class="video-card">
+            <h3>VK: Workout / Fitness</h3>
+            <div class="video-frame"><iframe src="https://vkvideo.ru/playlist/-42440633_48570837" title="Workout — VK Видео" frameborder="0" allowfullscreen loading="lazy"></iframe></div>
+            <p class="video-meta">Воркаут и фитнес-подборка: от базы до силовых программ.</p>
+          </article>
+        </div>
+      </section>
+      <section class="section">
+        <div class="section-header">
+          <p class="section-kicker">Улица</p>
+          <h2>Воркаут и бег</h2>
+          <p class="section-lead">Турники, брусья, стадион и обычный двор — тоже отличная площадка для спорта.</p>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer"><div class="footer-inner"><p>© 2026 · «Железная Вики» · Раздел с примерами тренировок.</p></div></footer>
+  </div>
+  <script src="assets/main.js"></script>
+</body>
+</html>
