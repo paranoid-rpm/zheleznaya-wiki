@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Мифы о спорте — Железная Вики</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <canvas id="bg-canvas"></canvas>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="nav-inner">
+        <a href="index.html" class="logo" aria-label="Железная Вики">
+          <svg class="logo-svg" viewBox="0 0 36 36" fill="none" aria-hidden="true" width="36" height="36">
+            <rect width="36" height="36" rx="10" fill="url(#lg)"/>
+            <defs><linearGradient id="lg" x1="0" y1="0" x2="36" y2="36"><stop stop-color="#ff6f61"/><stop offset="1" stop-color="#b71c1c"/></linearGradient></defs>
+            <text x="5" y="26" font-family="Inter,sans-serif" font-weight="800" font-size="20" fill="#fff" letter-spacing="-1">ЖВ</text>
+          </svg>
+          <div class="logo-text">
+            <span class="logo-text-main">Железная Вики</span>
+            <span class="logo-text-sub">влияние спорта на жизнь</span>
+          </div>
+        </a>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="theory.html">Теория</a></li>
+            <li><a href="workouts.html">Тренировки</a></li>
+            <li><a href="exercises.html">Упражнения</a></li>
+            <li><a href="nutrition.html">Спортпит</a></li>
+            <li><a href="psychology.html">Психология</a></li>
+            <li><a href="myths.html" class="active">Мифы</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="about.html">О проекте</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="site-main">
+
+      <!-- HERO -->
+      <section class="section">
+        <div class="section-header">
+          <p class="section-kicker">🚫 Без воды и бро-сайенс</p>
+          <h1>Мифы о спорте</h1>
+          <p class="section-lead">Собрали самые живучие заблуждения о тренировках, питании и теле — и разобрали каждое по-честному, без лишней мистики.</p>
+        </div>
+      </section>
+
+      <!-- МИФ 1 — Жир уходит локально -->
+      <section class="section">
+        <div class="section-header">
+          <p class="section-kicker">Миф #1</p>
+          <h2>«Качаю пресс — уйдёт жир с живота»</h2>
+          <p class="section-lead">Локальное жиросжигание — один из самых стойких мифов в фитнесе.</p>
+        </div>
+        <div class="cards-grid columns-3">
+          <article class="card">
+            <h3>❌ Миф</h3>
+            <p>Если качать пресс или делать упражнения на конкретную зону, жир именно оттуда и уйдёт.</p>
+          </article>
+          <article class="card">
+            <h3>✅ Реальность</h3>
+            <p>Жир расщепляется по всему телу через гормональные и метаболические процессы. Место тренировки не влияет на место сжигания жира.</p>
+          </article>
+          <article class="card">
+            <h3>💡 Что делать</h3>
+            <p>Дефицит калорий + кардио + силовые — вот формула. Пресс покажется, когда уйдёт общий процент жира.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- МИФ 2 — Девушки накачаются от гантелей -->
+      <section class="section">
+        <div class="section-header">
+          <p class="section-kicker">Миф #2</p>
+          <h2>«Девушки станут качками от силовых»</h2>
+          <p class="section-lead">Страх перекачаться удерживает многих девушек от силовых тренировок — и совершенно зря.</p>
+        </div>
+        <div class="cards-grid columns-3">
+          <article class="card">
+            <h3>❌ Миф</h3>
+            <p>Если девушка возьмёт гантели в руки, через месяц она станет похожа на бодибилдера.</p>
+          </article>
+          <article class="card">
+            <h3>✅ Реальность</h3>
+            <p>У женщин уровень тестостерона в 10–20 раз ниже, чем у мужчин. «Случайно перекачаться» физически невозможно без многолетних целенаправленных усилий.</p>
+          </article>
+          <article class="card">
+            <h3>💡 Что даёт</h3>
+            <p>Силовые тренировки формируют рельеф, ускоряют метаболизм и улучшают осанку. Эффект — подтянутое тело, а не «масса».</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- МИФ 3 — Протеин это стероиды -->
+      <section class="section">
+        <div class="section-header">
+          <p class="section-kicker">Миф #3</p>
+          <h2>«Протеин — это химия и стероиды»</h2>
+          <p class="section-lead">Мифы вокруг спортивного питания живучи особенно в России — разбираем главный из них.</p>
+        </div>
+        <div class="cards-grid columns-3">
+          <article class="card">
+            <h3>❌ Миф</h3>
+            <p>Протеиновый порошок — это гормоны, анаболики или «химия», которая вредит здоровью.</p>
+          </article>
+          <article class="card">
+            <h3>✅ Реальность</h3>
+            <p>Протеин — это концентрированный белок, как правило из молочной сыворотки или растительных источников. Тот же белок, что в курице или твороге, просто в удобной форме.</p>
+          </article>
+          <article class="card">
+            <h3>💡 Кому нужен</h3>
+            <p>Тем, кто не добирает белок из обычной еды. Норма — около 1.6–2.2 г на кг веса тела в день при активных тренировках.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- МИФ 4 — Без боли нет роста -->
+      <section class="section">
+        <div class="section-header">
+          <p class="section-kicker">Миф #4</p>
+          <h2>«No pain — no gain. Боль = прогресс»</h2>
+          <p class="section-lead">Культ боли в спортзале приводит к травмам чаще, чем к результатам.</p>
+        </div>
+        <div class="cards-grid columns-3">
+          <article class="card">
+            <h3>❌ Миф</h3>
+            <p>Если не больно — значит, не тренируешься. Надо терпеть и «пробивать» боль.</p>
+          </article>
+          <article class="card">
+            <h3>✅ Реальность</h3>
+            <p>Лёгкая мышечная крепатура — нормально. Острая боль в суставах, связках или позвоночнике — сигнал СТОП. Это не слабость, это твоё тело говорит о повреждении.</p>
+          </article>
+          <article class="card">
+            <h3>💡 Как правильно</h3>
+            <p>Прогрессивная нагрузка + правильная техника + восстановление. Рост мышц происходит во время отдыха, а не на тренировке.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- МИФ 5 — Кардио сжигает мышцы -->
+      <section class="section">
+        <div class="section-header">
+          <p class="section-kicker">Миф #5</p>
+          <h2>«Кардио сжигает мышцы»</h2>
+          <p class="section-lead">Страх «слить» мышцы заставляет людей полностью избегать кардионагрузок — это лишнее.</p>
+        </div>
+        <div class="cards-grid columns-3">
+          <article class="card">
+            <h3>❌ Миф</h3>
+            <p>Любое кардио разрушает мышечную ткань и сводит на нет весь прогресс от силовых.</p>
+          </article>
+          <article class="card">
+            <h3>✅ Реальность</h3>
+            <p>Умеренное кардио (2–3 раза в неделю, 30–40 мин) не влияет на мышечную массу при достаточном потреблении белка. Оно улучшает здоровье сердца и восстановление.</p>
+          </article>
+          <article class="card">
+            <h3>💡 Когда проблема</h3>
+            <p>Только при экстремальном объёме кардио + дефиците калорий + недоборе белка одновременно. В обычной жизни это редкость.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- МИФ 6 — Вредные привычки и спорт -->
+      <section class="section">
+        <div class="section-header">
+          <p class="section-kicker">Миф #6</p>
+          <h2>«Спорт нейтрализует курение и алкоголь»</h2>
+          <p class="section-lead">Некоторые считают: раз тренируешься — значит, можно «компенсировать» вредные привычки. Нет.</p>
+        </div>
+        <div class="cards-grid columns-3">
+          <article class="card">
+            <h3>❌ Миф</h3>
+            <p>Пробежал 5 км — заслужил сигарету или бокал. Спорт «обнуляет» вред от алкоголя и никотина.</p>
+          </article>
+          <article class="card">
+            <h3>✅ Реальность</h3>
+            <p>Никотин сужает сосуды, ухудшает кровоснабжение мышц и лёгких. Алкоголь снижает синтез белка, ломает сон и восстановление. Спорт не компенсирует системный вред этих веществ.</p>
+          </article>
+          <article class="card">
+            <h3>💡 Правда</h3>
+            <p>Зато спорт — один из лучших инструментов, чтобы бросить вредные привычки. Он снижает тягу, убирает стресс и даёт реальный дофамин без химии.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- МИФ 7 — Растяжка до тренировки -->
+      <section class="section">
+        <div class="section-header">
+          <p class="section-kicker">Миф #7</p>
+          <h2>«Перед тренировкой нужна статичная растяжка»</h2>
+          <p class="section-lead">Классика, которую многие тренеры старой школы до сих пор практикуют — хотя наука говорит обратное.</p>
+        </div>
+        <div class="cards-grid columns-3">
+          <article class="card">
+            <h3>❌ Миф</h3>
+            <p>Хорошо потянулся перед тренировкой — значит, разогрелся и защитил себя от травм.</p>
+          </article>
+          <article class="card">
+            <h3>✅ Реальность</h3>
+            <p>Статичная растяжка до нагрузки снижает силу и мощность мышц на 5–8% и не снижает риск травм. Исследования это подтверждают.</p>
+          </article>
+          <article class="card">
+            <h3>💡 Что работает</h3>
+            <p>Динамическая разминка (суставная гимнастика, лёгкое кардио, разогревочные подходы). Статичную растяжку лучше оставить на после тренировки.</p>
+          </article>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p>© 2026 · «Железная Вики» · Раздел о мифах в спорте.</p>
+      </div>
+    </footer>
+  </div>
+  <script src="assets/main.js"></script>
+</body>
+</html>
